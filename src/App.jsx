@@ -14,61 +14,61 @@ import heroImage from "./assets/hero.png";
 import styles from "./App.module.css";
 
 const sections = [
-  { id: "home", label: "Home" },
-  { id: "features", label: "Features" },
-  { id: "gallery", label: "Gallery" },
-  { id: "contact", label: "Contact" },
+  { id: "home", label: "Dashboard" },
+  { id: "features", label: "Budgets" },
+  { id: "gallery", label: "Reports" },
+  { id: "contact", label: "Goals" },
 ];
 
 const featureCards = [
   {
-    title: "Smart Cashflow",
-    description: "Track inflows, outflows, and key milestones from one elegant control layer.",
+    title: "Track Your Income & Expenses",
+    description: "Monitor every inflow and outflow in one simple view to keep your balance clear.",
     icon: Wallet,
   },
   {
-    title: "Card Insights",
-    description: "Highlight payment activity and recurring trends with visual summaries.",
+    title: "Smart Budgeting Insights",
+    description: "Visualize spending patterns, recurring payments, and category trends with ease.",
     icon: CreditCard,
   },
   {
-    title: "Secure Growth",
-    description: "Bring confidence to every decision with protected workflows and clean metrics.",
+    title: "Financial Goals & Savings",
+    description: "Set savings targets and stay focused with clear progress toward your financial goals.",
     icon: ShieldCheck,
   },
 ];
 
 const statCards = [
-  { value: "$48.2k", label: "Managed monthly volume" },
-  { value: "12+", label: "Interactive visual modules" },
-  { value: "99.9%", label: "Experience uptime target" },
+  { value: "$48.2k", label: "Monthly income and expense flow" },
+  { value: "12+", label: "Budget and report widgets" },
+  { value: "99.9%", label: "Clear view of your financial health" },
 ];
 
 const galleryCards = [
   {
-    title: "Gradient Panels",
-    text: "Soft pastel surfaces with glassmorphism and layered highlights.",
+    title: "Expense Analysis",
+    text: "Review category trends and understand where your money goes each month.",
   },
   {
-    title: "Motion Details",
-    text: "Hover states, smooth scroll, and polished transitions across each section.",
+    title: "Budget Reports",
+    text: "Check reports that help you compare budgets, balances, and actual spending.",
   },
   {
-    title: "Adaptive Layout",
-    text: "Responsive blocks that breathe properly from mobile through desktop.",
+    title: "Savings Progress",
+    text: "Track milestones for savings goals and stay consistent with long-term plans.",
   },
 ];
 
 const testimonials = [
   {
     name: "Nina Roy",
-    role: "Product Lead",
-    quote: "The sections feel clear, premium, and surprisingly calm even with a lot of information.",
+    role: "Budget Planner",
+    quote: "The dashboard makes it easy to follow expenses, budgets, and savings goals in one place.",
   },
   {
     name: "Arjun Mehta",
-    role: "Startup Founder",
-    quote: "Dark mode and mobile responsiveness both feel intentional instead of being afterthoughts.",
+    role: "Personal Finance User",
+    quote: "Reports and insights feel simple, modern, and useful for daily money decisions.",
   },
 ];
 
@@ -130,7 +130,7 @@ function App() {
           </span>
           <span>
             FinAura
-            <small>Responsive React Experience</small>
+            <small>Personal Finance Dashboard</small>
           </span>
         </a>
 
@@ -153,24 +153,24 @@ function App() {
       <main className={styles.main}>
         <section className={`${styles.section} ${styles.heroSection}`} id="home">
           <div className={styles.heroContent}>
-            <SectionLabel>Full-screen modern finance website</SectionLabel>
+            <SectionLabel>Welcome to Your Personal Finance Dashboard</SectionLabel>
             <h1 className={styles.heroTitle}>
-              A polished React experience with immersive sections, rich visuals,
-              and seamless dark mode.
+              Personal Finance Dashboard for tracking income, expenses, and
+              smarter money decisions.
             </h1>
             <p className={styles.heroText}>
-              Built as a responsive single-page site with CSS modules, smooth
-              section scrolling, elegant gradients, motion, icons, and reusable
-              components ready for a real product or portfolio.
+              Stay on top of your balance, analyze your spending habits, manage
+              budgets, and keep your financial goals moving forward with clear
+              visual insights.
             </p>
 
             <div className={styles.heroActions}>
               <a className={styles.primaryButton} href="#features">
-                Explore Sections
+                Explore Dashboard
                 <ArrowRight size={18} />
               </a>
               <a className={styles.secondaryButton} href="#gallery">
-                View Showcase
+                View Insights
               </a>
             </div>
 
@@ -185,13 +185,13 @@ function App() {
             <div className={styles.heroVisualCard}>
               <img className={styles.heroImage} src={heroImage} alt="Finance dashboard preview" />
               <div className={styles.overlayPanel}>
-                <span>Realtime analytics</span>
-                <strong>Adaptive interface kit</strong>
+                <span>Personal finance overview</span>
+                <strong>Income, budgets, and spending insights</strong>
               </div>
             </div>
             <div className={styles.floatingBadge}>
               <BarChart3 size={18} />
-              Smooth dark/light transition
+              Smart budgeting insights
             </div>
           </div>
 
@@ -203,12 +203,11 @@ function App() {
 
         <section className={`${styles.section} ${styles.featureSection}`} id="features">
           <div className={styles.sectionIntro}>
-            <SectionLabel>Interactive features</SectionLabel>
-            <h2>Designed to feel modern, readable, and delightfully responsive.</h2>
+            <SectionLabel>Budget tracking</SectionLabel>
+            <h2>Track your income, expenses, and balance with clarity.</h2>
             <p>
-              Each full-screen panel has its own visual atmosphere, while the
-              entire system shares one consistent palette, motion language, and
-              spacing rhythm.
+              Follow spending patterns, manage monthly budgets, and review the
+              numbers that matter most for your everyday financial planning.
             </p>
           </div>
 
@@ -221,12 +220,11 @@ function App() {
 
         <section className={`${styles.section} ${styles.gallerySection}`} id="gallery">
           <div className={styles.sectionIntro}>
-            <SectionLabel>Visual gallery</SectionLabel>
-            <h2>Distinct backgrounds, decorative shapes, and section-specific layouts.</h2>
+            <SectionLabel>Financial reports</SectionLabel>
+            <h2>Analyze your spending habits and financial trends.</h2>
             <p>
-              The cards below act as placeholder visuals that can later be
-              replaced with real product assets, mockups, screenshots, or
-              photography.
+              Use reports to understand expenses, compare budgets, and make
+              better decisions for savings, goals, and long-term stability.
             </p>
           </div>
 
@@ -251,21 +249,21 @@ function App() {
 
         <section className={`${styles.section} ${styles.contactSection}`} id="contact">
           <div className={styles.contactCard}>
-            <SectionLabel>Launch-ready section</SectionLabel>
-            <h2>Responsive, animated, and ready to drop into your React app.</h2>
+            <SectionLabel>Financial goals</SectionLabel>
+            <h2>Set and track your financial goals with confidence.</h2>
             <p>
-              This implementation uses functional components, CSS modules,
-              Lucide icons, a Google font, adaptive layouts, hover polish, and
-              theme-aware styling across the entire page.
+              Keep your savings goals visible, review progress often, and build
+              better habits with a modern dashboard experience that stays easy
+              to use.
             </p>
 
             <div className={styles.contactActions}>
               <button type="button" className={styles.primaryButton}>
-                Get Started
+                Check Reports
                 <ArrowRight size={18} />
               </button>
               <button type="button" className={styles.ghostButton}>
-                Download Preview
+                View Insights
               </button>
             </div>
           </div>
